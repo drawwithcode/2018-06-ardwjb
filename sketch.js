@@ -3,7 +3,7 @@ var myData;
 function preload() {
   // put preload code here
   myData = loadJSON('assets/china pop.json')
-  myImage = loadImage("./assets/china map.png");
+  myImage = loadImage("./assets/Chinamap.png");
 
 }
 var balls = [];
