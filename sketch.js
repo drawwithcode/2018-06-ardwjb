@@ -1,6 +1,4 @@
 var myData;
-var mydates;
-
 
 function preload() {
   // put preload code here
@@ -49,11 +47,11 @@ function draw() {
 
 function Ball(_x, _y, _diameter, _label) {
   // Properties defined by constructor
-  this.size = _diameter/10000000;
+  this.size = _diameter / 10000000;
   this.x = _x;
   this.y = _y;
   this.label = _label;
-  this.m= _diameter;
+  this.m = _diameter;
   // Hardcoded properties
   this.color = '#F4D03F';
   this.speed = 1;
@@ -77,10 +75,10 @@ function Ball(_x, _y, _diameter, _label) {
 
   this.display = function() {
     fill(this.color);
-    ellipse(this.x-5, this.y, this.size);
+    ellipse(this.x - 5, this.y, this.size);
     fill('black');
     textSize(20);
-    text(this.label+'='+this.m, this.x, this.y);
+    text(this.label + '=' + this.m, this.x, this.y);
 
   }
 
